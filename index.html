@@ -1,52 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DAW Development</title>
-    <link rel="stylesheet" href="../styles/trackCreation.css">
-    <link rel="stylesheet" href="../styles/piano.css">
-    <link rel="stylesheet" href="../styles/instrumentLibrary.css">
-    <link rel="stylesheet" href="../styles/toolbar.css">
-    <script src="../scripts/createPlaceholderImages.js"></script>
-    <script src="../scripts/piano.js"></script>
-    <script src="../scripts/trackCreation.js" defer></script>
-    <script src="../scripts/instrumentLibrary.js" defer></script>
-    <script src="main.js" defer></script>
   </head>
   <body>
     <div id="root"></div>
-    <div class="track-creation-dialog">
-        <div class="track-types">
-            <button class="software-instrument-button track-type-button">
-                <span>Software Instrument</span>
-                <p>Use a MIDI keyboard to play virtual instruments</p>
-            </button>
-            <button class="audio-button track-type-button">
-                <span>Audio</span>
-                <p>Record using a microphone or audio interface</p>
-            </button>
-            <button class="guitar-button track-type-button">
-                <span>Guitar</span>
-                <p>Record guitar or bass through an audio interface</p>
-            </button>
-            <button class="drummer-button track-type-button">
-                <span>Drummer</span>
-                <p>Add dynamic drum tracks to your project</p>
-            </button>
-        </div>
-        <div class="dialog-buttons">
-            <button class="cancel-button">Cancel</button>
-            <button class="create-button">Create</button>
-        </div>
-    </div>
-    <div id="piano-container" class="piano-container" style="display: none;">
-        <div class="piano-controls">
-            <button id="octave-down">◀ Octave</button>
-            <span id="octave-display">C3 - C5</span>
-            <button id="octave-up">Octave ▶</button>
-        </div>
-        <div id="piano-keys"></div>
-    </div>
-    <script src="../dist/bundle.js"></script>
   </body>
 </html> 
